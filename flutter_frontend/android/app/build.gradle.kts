@@ -25,7 +25,8 @@ android {
         applicationId = "com.example.flutter_frontend"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        // Raise minSdk to satisfy Firebase/Auth and plugin requirements.
+        minSdk = 23
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
