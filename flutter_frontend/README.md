@@ -1,16 +1,7 @@
-# flutter_frontend
+# Flutter Frontend Environment
 
-A new Flutter project.
+- The app expects BACKEND_BASE_URL and REALTIME_PROTOCOL from a `.env` file at the project root.
+- BACKEND_BASE_URL should point to the Flask backend base URL (e.g., http://localhost:3001).
+- REALTIME_PROTOCOL is currently `sse`.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ensure your API client reads BACKEND_BASE_URL from the environment rather than hardcoding it.
